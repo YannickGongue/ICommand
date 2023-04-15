@@ -1,0 +1,28 @@
+﻿<UserControl x:Class="DoubleClickCommand.Views.SearchEmail"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DoubleClickCommand"
+             mc:Ignorable="d" 
+             Height="100" 
+             Width="550">
+    <Grid>
+        <TextBox 
+            x:Name="SucheEmail"
+            Width="250" 
+            Height="25"
+            Margin="0,-50,0,0"
+            Text="{Binding Path=SetEmail}"/>
+        
+        <Button x:Name="Suche" 
+                Content="Search Email"
+                Width="150"
+                Height="40"
+                Background="RoyalBlue"
+                Margin="0,40,0,0"
+                BorderBrush="Gray"
+                BorderThickness="2"
+                Command="{Binding Path=OnSearchCommand}"/>
+    </Grid>
+</UserControl>

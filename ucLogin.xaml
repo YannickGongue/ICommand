@@ -1,0 +1,30 @@
+﻿<UserControl x:Class="DoubleClickCommand.Views.ucLogin"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DoubleClickCommand" 
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             mc:Ignorable="d" 
+             Height="200" 
+             Width="300"
+             Background="AliceBlue"
+             BorderBrush="Gray"
+             BorderThickness="2">
+    <Grid>
+        <TextBox
+           x:Name="Nachname" 
+           Width="150"
+           Height="30"
+           Margin="0,-60,0,0"
+           Text="{Binding Path=SetName }"/>
+
+        <TextBox
+           x:Name="Vorname" 
+           Width="150"
+           Height="30"
+           Margin="0,50,0,0"
+           Text="{Binding Path=SetPassword }"/>
+
+    </Grid>
+</UserControl>
